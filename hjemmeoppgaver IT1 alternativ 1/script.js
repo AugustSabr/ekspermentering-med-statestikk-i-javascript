@@ -1,4 +1,4 @@
-var questions = ["Himmelen er grønn", "Jorden er flat", "Venus er firkantet", "Saturn er rundt"]
+var questions = ["Himmelen er grønn", "Jorden er flat", "Venus er firkantet", "Saturn er rund"]
 
 for(var i = 0 ; i < questions.length ; i++){
   window["q"+i] = document.createElement("p")

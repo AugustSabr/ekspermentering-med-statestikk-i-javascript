@@ -9,10 +9,12 @@
 </head>
 <body>
   <h1>Fødselsoversikt</h1>
-  <p>Tabellen viser antall barn som ble født mellom 2011 og 2020. I teksten under kan du se året med flest og ferrest fødsler samt hvor mage som ble født desse 10 årene. Nederst kan du også velge å se hvor mange fødler på et intervall</p>
   <div id="tablePlaceholder"></div>
-  <p id ="tekst"></p>
-  <p>Mellom starten av år <select id="select0"></select> og sluttten av år <select id="select1"></select> ble <label id="intervall"></label> barn født. Husk å ha det tidligere året først.</p>
+  <p>Tabellen viser antall barn som ble født mellom 2011 og 2020. I teksten under kan du se året med flest og færrest fødsler samt hvor mange som ble født disse 10 årene. Under kan du både se den selektive utregningen samt antall fødsler innenfor et intervall. Året med færrest fødsler var <label id="flærrestFødslerAr"></label>, bare <label id="flærrestFødslerInt"></label> barn ble født. Året med flest fødsler var <label id="flestFødslerAr"></label>, hele <label id="flestFødslerInt"></label> barn ble født. I løpet av de <label id="alleAr"></label> årene ble det født <label id="alleInt"></label> barn.</p>
+  <h3>Selektiv utregning</h3>
+  <p>I årene du har valgt ut ble <label id="utvalgtSum"></label> barn født, <label id="utvalgtGutter"></label> gutter og <label id="utvalgtJenter"></label> jenter.</p>
+  <h3>Intervall utregning</h3>
+  <p>Mellom starten av år <select id="select0"></select> og sluttten av år <select id="select1"></select> ble <label id="intervallSum"></label> barn født, <label id="intervallGutter"></label> gutter og <label id="intervallJenter"></label> jenter. (Husk å ha det tidligere året først.)</p>
   <script src="script.js"></script>
 </body>
 </html>

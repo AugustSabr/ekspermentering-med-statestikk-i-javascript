@@ -19,3 +19,12 @@
   background-color: #808080;
   color: white;
 }
+
+p{
+  margin-top: 16px;
+  line-height: 1.8;
+  width: 1000px;
+}
+h3{
+  margin-bottom: 0px;
+}
