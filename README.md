@@ -1,0 +1,2 @@
+# oppgave-it1-termin2
+Jeg gjorde begge oppgavene fordi de viser litt ulik kompetangse. Har du bare tid til å se på en se gjerne på den første. På oppgave 2c var jeg litt usikker på hva oppgaven mente her:"hvis en bruker velger 2010, 2012 og 2013". tabbellen har bare tall mellom 2011 og 2020. Jeg antok at eksempelet ville se på intervallet mellom 2011 og 2013, så jeg lagde en mulighet hvor brukeren kan velge to år og se fødselstallene i intervallelt mellom de.
