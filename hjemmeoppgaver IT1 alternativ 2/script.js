@@ -10,8 +10,8 @@ for(var i = 0 ; i < arstall.length ; i++){
   arsSum.push(guttebarn[i] + jentebarn[i]);
   totalSum += guttebarn[i] + jentebarn[i]
 }
-var min = Math.min.apply(Math, arsSum)
-var max = Math.max.apply(Math, arsSum)
+var low = Math.min.apply(Math, arsSum)
+var high = Math.max.apply(Math, arsSum)
 
 
 function orderTable(){
@@ -36,7 +36,7 @@ function orderTable(){
 }
 orderTable();
 
-document.getElementById("tekst").innerText = "Året med færrest fødsler var "+arstall[arsSum.indexOf(min)]+", bare "+min+" barn ble født. Året med flest fødsler var "+arstall[arsSum.indexOf(max)]+", hele "+max+" barn ble født. Iløpet av de"+arstall.length+" årene ble "+totalSum+" barn født.";
+document.getElementById("tekst").innerText = "Året med færrest fødsler var "+arstall[arsSum.indexOf(low)]+", bare "+low+" barn ble født. Året med flest fødsler var "+arstall[arsSum.indexOf(high)]+", hele "+high+" barn ble født. Iløpet av de"+arstall.length+" årene ble "+totalSum+" barn født.";
 
 for(var i = 0 ; i < 2 ; i++){
   window["select"+i] = document.createElement("select")
@@ -51,7 +51,7 @@ for(var i = 0 ; i < 2 ; i++){
 }
 
 function regnUt(){
-  var a = 0;
+  var intervallSum = 0;
   var id0 = arstall.indexOf(parseInt(document.getElementById("select0").value));
   var id1 = arstall.indexOf(parseInt(document.getElementById("select1").value));
 
@@ -60,8 +60,8 @@ function regnUt(){
     list.push(i);
   }
   for (var i = 0; i < list.length; i++) {
-    a += arsSum[list[i]];
+    intervallSum += arsSum[list[i]];
   }
-  document.getElementById("a").innerText = a;
+  document.getElementById("intervall").innerText = intervallSum;
 }
 regnUt()

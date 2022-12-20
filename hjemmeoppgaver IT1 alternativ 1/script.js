@@ -21,8 +21,9 @@ for(var i = 0 ; i < questions.length ; i++){
 }
 document.body.insertBefore(document.createElement("br"), document.getElementsByTagName("button")[0]);
 
-localStorage.clear()
+// localStorage.clear()
 var allAnswers = JSON.parse(localStorage.getItem("truefalseQuestions")) || [];
+document.getElementById("antallSvart").innerText = allAnswers[0];
 console.log(allAnswers);
 
 function svar(){
@@ -40,6 +41,7 @@ function svar(){
   allAnswers[0]++
   console.log(allAnswers);
   localStorage.setItem("truefalseQuestions", JSON.stringify(allAnswers));
+  document.getElementById("antallSvart").innerText = allAnswers[0];
 }
 function visResultat(){
   barChart()
@@ -88,5 +90,4 @@ function barChart(){
     }
   });
   document.querySelectorAll("iframe").forEach(iframe => iframe.remove())
-
 }
