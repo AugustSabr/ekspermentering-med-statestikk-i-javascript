@@ -1,2 +1,3 @@
-# oppgave-it1-termin2
-Jeg gjorde begge oppgavene fordi de viser litt ulik kompetangse. Har du bare tid til å se på en se gjerne på den første. På oppgave 2c var jeg litt usikker på hva oppgaven mente her:"hvis en bruker velger 2010, 2012 og 2013". tabbellen har bare tall mellom 2011 og 2020. Jeg antok at eksempelet ville se på intervallet mellom 2011 og 2013, så jeg lagde en mulighet hvor brukeren kan velge to år og se fødselstallene i intervallelt mellom de.
+# Oppgave-it1-termin2
+Jeg gjorde begge oppgavene fordi de viser litt ulik kompetanse.
+På oppgave 2c var jeg litt usikker på hva oppgaven mente med:"hvis en bruker velger 2010, 2012 og 2013". Tabellen har bare tall mellom 2011 og 2020. Jeg var usikker på om oppgaven ville ha intervallet mellom 2011 og 2013, eller checkbokser for selektiv utregning. Jeg gjorde begge; en mulighet hvor brukeren kan velge to år og se fødselstallene i intervallet mellom dem, og en mulighet hvor brukeren krysser av boksene ved siden av årstallene brukeren vil se summen av.
